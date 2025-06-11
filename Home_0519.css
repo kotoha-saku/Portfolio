@@ -1,0 +1,193 @@
+body{
+    font-family: "Lexend", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f5eaf0;
+    color: #333;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: #D85B67;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1rem;
+}
+
+header{
+    /*background-color: #f0f4f8;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin: 5px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+header nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.5rem;
+}
+
+header nav ul li a:hover{
+    color: #FF77A9;
+}
+
+header nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #FF77A9;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.main-visual{
+    text-align: center;
+    padding: 10px;
+    /*スライドを中央に配置するための親要素指定*/
+    position: relative;
+    height: 550px;
+}
+
+.slide-wrapper{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    /*左右中央に配置*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.slide img{
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slide img.active{
+    display: block;
+}
+
+.next{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    transform: rotate(45deg) translateY(50%);
+}
+
+.prev{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 25px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.intro-text p{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.work-container{
+    /*background-color: #fff;*/
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.work-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    /*background-color: #f3e8ff;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 150px;
+}
+
+footer nav ul li p{
+    font-size: 1.5rem;
+    color: #D85B67;
+    margin-bottom: 5px;
+}
+
+footer nav ul li ul li{
+    padding: 5px 0;
+}
+@media(min-width: 900px){
+    header ul{
+        flex-direction: row;
+        gap: 20px;
+    }
+    header h1{
+        align-items: center;
+    }
+}
+
+footer p{
+    margin-right: 30px;
+    text-align: right;
+}
