@@ -146,6 +146,28 @@ main {
     transform: rotate(45deg) translateY(50%);
 }
 
+.indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #e1bee7;
+    transition: background-color 0.3s;
+}
+
+.indicator-dot.active {
+    background-color: #e1bee7;
+}
+
+
 .intro-text p {
     text-align: center;
     font-size: 1.25rem;
