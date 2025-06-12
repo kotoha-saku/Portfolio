@@ -227,3 +227,52 @@ footer .copyright {
     margin-right: 30px;
 }
 
+@media(min-width: 900px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .nav-links{
+        flex-direction: row;
+    }
+
+    header nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    section{
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .slide-wrapper{
+        margin: 0 auto;
+    }
+
+    .intro-text p{
+        font-size: 1.5rem;
+    }
+
+    .work-grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .work-container{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+}
