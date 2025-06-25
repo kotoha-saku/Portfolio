@@ -272,6 +272,7 @@ footer {
 footer nav > ul > li > p {
     font-size: 1.3rem;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 footer nav ul li ul li {
