@@ -126,16 +126,22 @@
                 <h2>Contact</h2>
                 <p>以下の問い合わせフォーム、もしくは各サービスのダイレクトメッセージからお気軽にご連絡ください。</p>
                 <form action="https://formspree.io/f/movwppgo" method="POST">
-                    <label>
-                        メールアドレス:
-                        <input type="email" name="email">
-                    </label>
-                    <label>
-                        お問い合わせ内容:
-                        <textarea name="message"></textarea>
-                    </label>
+                    <ul>
+                        <li>
+                            <label>お名前</label>
+                            <input type="text" name="name" placeholder="name">
+                        </li>
+                        <li>
+                            <label>メールアドレス</label>
+                            <input type="email" name="email" placeholder="test@email.com">
+                        </li>
+                        <li>
+                            <label>お問い合わせ内容</label>
+                            <textarea name="message" placeholder="お問い合わせ内容を入力してください"></textarea>
+                        </li>
+                    </ul>
                     <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
+                    <button type="submit">送信</button>
                 </form>
                 <div class="sns-container">
                     <a href="https://x.com/KOTOHA_saku">

@@ -244,12 +244,62 @@ section h2{
     text-align: center;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form ul{
+    width: 100%;
+    margin: 10px 0;
+}
+
+form li{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input{
+    width: 70%;
+    height: 30px;
+    border: solid 1px #000;
+    padding: 5px;
+}
+
+form textarea{
+    width: 70%;
+    height: 100px;
+    border: solid 1px #000;
+    padding: 5px;
+}
+
+form button{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+form button:hover{
+    color: #000;
+    border: solid 1px #000;
+    background-color: transparent;
+}
+
+::placeholder{
+    color: gray;
+}
+
 .sns-container{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .sns-container a{
